@@ -4,7 +4,7 @@ package model;
 public class User {
     protected String username;
 
-    public User(String username) {
+    public User(String uswrname) {
         this.username = username;
     }
 
