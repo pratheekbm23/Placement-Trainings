@@ -1,6 +1,6 @@
 package model;
 
-/** A booking record. Life cycle: WAITING -> ALLOCATED -> CHECKED_IN -> CHECKED_OUT */
+//A booking record. Life cycle: WAITING -> ALLOCATED -> CHECKED_IN -> CHECKED_OUT
 public class Booking {
 
     public enum Status { WAITING, ALLOCATED, CHECKED_IN, CHECKED_OUT }
@@ -21,7 +21,7 @@ public class Booking {
         this.status = Status.WAITING;   // until a room is allocated
     }
 
-    /** Room allocation: attach a room to this booking. */
+    //Room allocation: attach a room to this booking. 
     public void assignRoom(Room room) {
         this.room = room;
         this.status = Status.ALLOCATED;
