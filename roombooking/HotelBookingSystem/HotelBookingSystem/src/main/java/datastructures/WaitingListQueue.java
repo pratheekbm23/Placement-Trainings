@@ -19,7 +19,7 @@ public class WaitingListQueue {
     private Node rear;    // last guest in line
     private int size;
 
-    /** Add a guest at the end of the line. */
+    //Add a guest at the end of the line
     public void enqueue(Booking booking) {
         Node node = new Node(booking);
         if (rear == null) {
@@ -31,7 +31,7 @@ public class WaitingListQueue {
         size++;
     }
 
-    /** Remove and return the earliest waiting booking for the given room type (or null). */
+    //Remove and return the earliest waiting booking for the given room type (or null)
     public Booking removeFirstOfType(String type) {
         Node prev = null;
         Node cur = front;
